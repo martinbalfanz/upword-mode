@@ -3,7 +3,7 @@
 ;; Copyright (C) 2014 Martin Balfanz
 
 ;; Author: Martin Balfanz <me@martinbalfanz.com>
-;; Version: 0.1.0
+;; Version: 0.1.1
 ;; Keywords: notes
 
 ;; This program is free software; you can redistribute it and/or modify
