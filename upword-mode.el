@@ -38,7 +38,7 @@
 
 (defface upword-mode-bold-face
   '((t :foreground "dark turquoise" :weight bold))
-  "Face for items marked as done."
+  "Face for items marked as bold."
   :group 'faces)
 
 (defface upword-mode-important-face
