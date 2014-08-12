@@ -53,7 +53,7 @@
     ("^!!!.*$" . 'upword-mode-important-face)))
 
 ;;;###autoload
-(define-derived-mode upword-mode text-mode "UpWord Notes file"
+(define-derived-mode upword-mode text-mode "UpWord"
   "Major mode for editing UpWord Note files."
   ;;(setq font-lock-defaults upword-mode-font-lock-defaults)
   (font-lock-add-keywords nil upword-mode-font-lock-defaults)
