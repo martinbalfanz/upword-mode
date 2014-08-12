@@ -3,7 +3,7 @@
 ;; Copyright (C) 2014 Martin Balfanz
 
 ;; Author: Martin Balfanz <me@martinbalfanz.com>
-;; Version: 0.1.1
+;; Version: 0.1.2
 ;; Keywords: notes
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -29,7 +29,7 @@
 
 (defgroup upword-mode nil
   "Major mode for editing UpWord note files."
-  :group 'languages
+  :group 'text
   :link '(url-link :tag "Repository" "https://github.com/martinbalfanz/upword-mode"))
 
 (defgroup upword-mode-faces nil
