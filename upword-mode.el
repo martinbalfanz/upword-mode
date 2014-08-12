@@ -27,19 +27,25 @@
 
 ;;; Code:
 
+(defgroup upword-mode nil
+  "Major mode for editing UpWord note files."
+  :group 'languages
+  :link '(url-link :tag "Repository" "https://github.com/martinbalfanz/upword-mode"))
+
 (defgroup upword-mode-faces nil
-  "Faces for syntax highlighting."
+  "Faces for UpWord syntax highlighting."
+  :group 'upword-mode
   :group 'faces)
 
 (defface upword-mode-done-face
   '((t :foreground "dim grey" :strike-through t))
   "Face for items marked as done."
-  :group 'faces)
+  :group 'upword-mode-faces)
 
 (defface upword-mode-bold-face
   '((t :foreground "dark turquoise" :weight bold))
   "Face for items marked as bold."
-  :group 'faces)
+  :group 'upword-mode-faces)
 
 (defface upword-mode-important-face
   '((t :foreground "hot pink" :weight bold))
