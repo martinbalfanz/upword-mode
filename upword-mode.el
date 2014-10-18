@@ -58,6 +58,34 @@
     ("^>.*$" . 'upword-mode-bold-face)
     ("^!!!.*$" . 'upword-mode-important-face)))
 
+(defun upword-mode-move-line-down ()
+  "Move the current line down."
+  (interactive)
+  (forward-line 1)
+  (transpose-lines 1)
+  (forward-line -1))
+
+(defun upword-mode-move-line-up ()
+  "Move the current line up."
+  (interactive)
+  (transpose-lines 1)
+  (forward-line -2))
+
+(defun upword-mode-toggle-done ()
+  "")
+
+(defun upword-mode-toggle-important ()
+  "")
+
+(defun upword-mode-toggle-bold ()
+  "")
+
+(defvar upword-mode-map nil "Keymap for upword-mode")
+(when (not upword-mode-map)
+  (setq upword-mode-map (make-sparse-keymap))
+  (define-key upword-mode-map (kbd "M-<down>") 'upword-mode-move-line-down)
+  (define-key upword-mode-map (kbd "M-<up>") 'upword-mode-move-line-up))
+
 ;;;###autoload
 (define-derived-mode upword-mode text-mode "UpWord"
   "Major mode for editing UpWord Note files."
